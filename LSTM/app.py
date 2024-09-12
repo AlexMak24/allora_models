@@ -25,7 +25,7 @@ class LSTMModel(nn.Module):
 
 # Initialize the model
 model = LSTMModel(input_size=1, hidden_layer_size=115, output_size=1, num_layers=2, dropout=0.3)
-model.load_state_dict(torch.load("lstm_model_optimized.pth"),weights_only=True)
+model.load_state_dict(torch.load("lstm_model_optimized.pth"))
 model.eval()
 
 # Function to fetch historical data from Binance
