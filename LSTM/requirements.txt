@@ -1,5 +1,6 @@
-torch==2.0.1
-pandas==2.1.3
+flask[async]
+gunicorn[gthread]
+transformers[torch]
+pandas
 scikit-learn==1.3.2
-requests==2.32.0
-flask==2.3.4
+
